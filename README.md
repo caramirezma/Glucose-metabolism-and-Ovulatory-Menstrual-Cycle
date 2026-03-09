@@ -19,3 +19,5 @@ Figure 4: An insulin profile
 Figure 5: The Beta-cell mass profile presented in the lower row of Figure 14. in the paper
 Figure 6: The S_I (insulin isensitivity) profile
 Figures 1 and 7 are the input profiles before and after the ODE solution, to maker sure they are remain the same along the process, since there is an interpolation inside the ODE to adjust the times from the input profiles and the ones of the ODE solver.
+
+PLease always cite if using this code
