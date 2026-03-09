@@ -12,6 +12,8 @@ lines 50 and 51
 par.R_0= 864;
 par.E_G0=10;
 
+You need to have in the same folder the main function SOLVER_GynCycle_inputs.m, the ODE system coupling_Glucose_E2P4_GynCycleinput, and the input profile file E2P4resultsBase.mat
+
 Runing the solver with the inputs from the GynCycle gives:
 Figure 2: The glucose profile along one menstrual cycle compoared to the experiments from CGM data, which corresponds to the right side of Figure 13. in the paper
 Figure 3: The glucose profile during 300 days presented in the upper right of Figure 14. in the paper
