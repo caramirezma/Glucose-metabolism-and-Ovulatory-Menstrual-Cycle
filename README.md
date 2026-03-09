@@ -1,6 +1,6 @@
 The Main function Solving the ODE system is SOLVER_GynCycle_inputs.m
-It starts with the initial conditions for either non Fasting (Daily median Glucose) or fasting scenario
-The fasting/non fasting setting must be in agreement with the parameters used in the ODE: coupling_Glucose_E2P4_GynCycleinput.m
+It starts with the initial conditions for either non Fasting (Daily median Glucose) or fasting scenario for Beta, Insulin, Glucose and S_I.
+The fasting/non fasting setting must be in agreement with the parameters used in the ODE: coupling_Glucose_E2P4_GynCycleinput.m.
 
 If using the initial conditions for the Non-Fasting scenario in SOLVER_GynCycle_inputs.m, set inside coupling_Glucose_E2P4_GynCycleinput:
 lines 50 and 51
