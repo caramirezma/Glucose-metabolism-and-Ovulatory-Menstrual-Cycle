@@ -1,0 +1,38 @@
+WRITE "MODEL OF METABOLIC SYSTEM WITH OMC"$
+
+% B_ IS THE VARIABLE VECTOR 
+B_:={U1,U2,Y3,X1,X2,X3}$
+
+FOR EACH EL_ IN B_ DO DEPEND EL_,T$
+
+%B1_ IS THE UNKNOWN PARAMETER VECTOR
+
+B1_:={kIup,kP4sec,kIsec}$
+%B1_:={kIup,kP4sec,kIsec,KE2sec,KsE2,KsP4}$
+
+%NUMBER OF STATES
+NX_:=3$
+%NUMBER OF INPUTS 
+NU_:=2$
+%NUMBER OF OUTPUTS
+NY_:=1$
+
+%MODEL  EQUATIONS 
+
+C_:={df(x1,t)=(x1*(kbeta*(u1/(KbetaE2+u1))*x3/(KbetaGg+x3))-x1*(kbetaApop*x3/(KbetaGApop+x3))),
+df(x2,t)=(x3*(kIsec*(u1/((KE2sec+u1)))*((1+(kP4sec)*(u2)))*(x3)/(KGsec+x1)))-(kcl*x2),
+df(x3,t)=R0-(x3*(EG0+(kIup*(u1/(KsE2+u1))*(KsP4/(KsP4+u2))*1/(Ksup+x2))*x2)),
+y3=x3}$
+
+FLAG_:=1$
+%FLAG_:=0$
+%B2_:={R0=890,EG0=8,kcl=432,KGsec=100,KsE2=62,KsP4=2,KE2sec=33,kbeta=0.00045,KbetaGApop=125,KbetaGg=70,KbetaE2=50,kbetaApop=0.0004,Ksup=70}$
+%B2_:={R0=890,EG0=8,kcl=432,KGsec=100,kbeta=45,KbetaGApop=125,KbetaGg=70,KbetaE2=50,kbetaApop=4,Ksup=70}$
+
+DAISY()$
+
+%VALUES OF INITIAL CONDITIONS
+ICK_:={X1=850,X2=7,X3=108}$ 
+CONDINIZ()$
+
+END$
