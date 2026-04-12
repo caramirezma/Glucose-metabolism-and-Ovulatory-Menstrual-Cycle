@@ -27,12 +27,14 @@ Figure 6: The S_I (insulin isensitivity) profile
 
 Figures 1 and 7 are the input profiles before and after the ODE solution, to maker sure they are remain the same along the process, since there is an interpolation inside the ODE to adjust the times from the input profiles and the ones of the ODE solver.
 
-For figures 10, 11, and 12, run the following files in the same folder as Sim_Metabolico_Param-slx:
+For figures 10, 11, and 12, save the following ,m files in the same folder as Sim_Metabolico_Param.slx to run them as desired:
 
 Figure 10: run file Fig10_ParametricAnalysis_kIsec_JTB.m
 
 Figure 11: run file Fig11_ParametricAnalysis_kup_JTB.m
 
 Figure 12: run file Fig12_ParametricAnalysis_kP4sec_JTB.m
+
+To compute the correlation matrix for both scenarios (E2 and E2 with P4): Use SensitivityAnalysisFIM_JTBpaper.m, saved in the same folder as Sim_Metabolico_Param.slx, and Sim_Metabolico_ParamE2.slx
 
 *Please always cite if using this code
