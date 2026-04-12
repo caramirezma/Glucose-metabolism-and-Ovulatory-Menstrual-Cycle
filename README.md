@@ -16,10 +16,15 @@ You need to have in the same folder the main function SOLVER_GynCycle_inputs.m, 
 
 Runing the solver with the inputs from the GynCycle gives:
 Figure 2: The glucose profile along one menstrual cycle compoared to the experiments from CGM data, which corresponds to the right side of Figure 13. in the paper
+
 Figure 3: The glucose profile during 300 days presented in the upper right of Figure 14. in the paper
+
 Figure 4: An insulin profile
+
 Figure 5: The Beta-cell mass profile presented in the lower row of Figure 14. in the paper
+
 Figure 6: The S_I (insulin isensitivity) profile
+
 Figures 1 and 7 are the input profiles before and after the ODE solution, to maker sure they are remain the same along the process, since there is an interpolation inside the ODE to adjust the times from the input profiles and the ones of the ODE solver.
 
 Figure 10: run file Fig10_ParametricAnalysis_kIsec_JTB.m
