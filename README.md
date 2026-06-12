@@ -1,3 +1,5 @@
+This code is under a Creative Commons license CC BY-NC-ND 4.0, belonging to the paper "A physiologically based mathematical model describing estradiol and progesterone actions on glucose-insulin dynamics throughout the menstrual cycle" in The Journal of Theoretical Biology. Please always cite if using this material.
+
 The Main function Solving the ODE system is SOLVER_GynCycle_inputs.m
 It starts with the initial conditions for either non Fasting (Daily median Glucose) or fasting scenario for Beta, Insulin, Glucose and S_I.
 The fasting/non fasting setting must be in agreement with the parameters used in the ODE: coupling_Glucose_E2P4_GynCycleinput.m.
